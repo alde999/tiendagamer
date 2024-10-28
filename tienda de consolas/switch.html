@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     
+        header {
+            top: 0%;
+           left: 0%;
+           height: 0%;
+            background-image: url(headswitch.png);
+           background-repeat: no-repeat;
+           background-position-x: center;
+           background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+         
+          
+            
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+        }
+    
+footer {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #35424a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xbox shop</title>
+    <link rel="stylesheet" href="styleswitch.css">
+</head>
+<body>
+    <header>
+        <h1>gaming SHOP</h1>
+        <nav>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">apartados</a>
+                        <ul class="submenu">
+                            <li><a href="play.html">apartado de playstation</a></li>
+                            <li><a href="xbox.html">apartado de xbox</a></li>
+                          
+                        </ul></li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul class="submenu">
+                            <li><a href="#">nitendo switch</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li> <a href="#carrot">carrito</a></li>
+                    <li> <a href="tienda.html">Ir al menu principal</a></li>
+                </ul>
+            </nav>
+           
+        </nav>
+    </header>
+    
+    <audio id="switchopen" src="mariosound.mp3" preload="auto"></audio>
+
+    <p>NITENDOS SWITCHIS</p>
+
+    <div class="contenedor">
+      <div class="imagen"> 
+        <a class="button button-2"> 
+            <img src="c2-switch.jpg" alt="imagen 1">
+            <h3>Nintendo Consola Switch <br>Neon</h3>
+            <button onclick="agregarAlCarrito('Nintendo Consola Switch Neon', 5999)">Agregar al carrito</button>
+            <center><p>$
+                5,999</p></center>
+                <p>32 GB de almacenaamiento</p>
+               
+            </a>
+        </div>
+        
+        <div class="imagen">
+            <a class="button button-2"> 
+            <img src="c2-switchlite.jpg" alt="imagen 2">
+            <h3>Nitendo Switch Lite</h3>
+            <button onclick="agregarAlCarrito('Nintendo Switch w/ Gray Joy', 3150)">Agregar al carrito</button>
+            <center><p>$
+                3,150</p></center>
+                <p>la consola Nintendo Switch Lite<br> es una consola Nintendo Switch<br> pequeña y ligera a un gran <br>precio.</p>
+                
+            </a>
+        </div>
+        <div class="imagen">
+            <a class="button button-2"> 
+            <img src="c2-switchwhite.jpg" alt="imagen 3">
+            <h3>Nintendo Switch OLED<br> w/ White</h3>
+            <button onclick="agregarAlCarrito('Nintendo Switch OLED w/ White', 5499)">Agregar al carrito</button>
+            <center><p>$
+                5,499</p></center>
+                <p>64 GB de almacenamiento<br> 
+                    Pantalla OLED <br>de 7 pulgadas (17.78 cm)
+                </p>
+               
+            </a>
+                
+        </div>
+        <div class="imagen">
+            <a class="button button-2"> 
+            <img src="c2-switchnegro.jpg" alt="imagen 4" alt="imagen 4">
+            <h3>Nintendo Switch w/ Gray<br> Joy</h3>
+            <button onclick="agregarAlCarrito('Nintendo Switch w/ Gray Joy', 5230)">Agregar al carrito</button>
+            <center><p>$
+                5,230</p></center>
+                <p>32 GB de almacenamiento</p>
+               
+            </a>
+        </div>
+      
+    </div class="contenedor">
+
+
+    <section id="carrot"> 
+    <div id="carrito">
+
+        <h3>Carrito de Compras</h3>
+        <ul id="lista-carrito"></ul>
+        <p id="total-price">Total: $0.00</p>
+    </div>
+    </section>
+
+
+    <footer>
+        <p1>© 2024 Mi Tienda. Todos los derechos reservados.</p1>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('switchopen');
+            audio.play().catch(error => {
+                console.log('No se pudo reproducir el audio:', error);
+            });
+        };
+    </script>
+    
+    <script>
+        document.getElementById('reproducir').addEventListener('click', function() {
+            var audio = document.getElementById('miAudio');
+            audio.play();
+        });
+    </script>
+    <script>
+        const carrito = [];
+        let total = 0;
+    
+        function agregarAlCarrito(producto, price) {
+            carrito.push({ nombre: producto, price: price });
+            total += price;
+            displayCart();
+        }
+    
+        function displayCart() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            const totalPrice = document.getElementById('total-price');
+        
+            listaCarrito.innerHTML = '';
+            carrito.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.nombre} - $${item.price.toFixed(2)}`;
+                
+                const botonEliminar = document.createElement('button');
+                botonEliminar.textContent = 'Eliminar';
+                botonEliminar.onclick = () => eliminarDelCarrito(item.nombre);
+                li.appendChild(botonEliminar);
+                
+                listaCarrito.appendChild(li);
+            });
+        
+            totalPrice.textContent = `Total: $${total.toFixed(2)}`;
+        }
+    
+        function eliminarDelCarrito(nombreProducto) {
+            const index = carrito.findIndex(item => item.nombre === nombreProducto);
+            if (index > -1) {
+                total -= carrito[index].price; // Restar el precio del total
+                carrito.splice(index, 1);
+            }
+            displayCart(); // Actualiza la lista del carrito
+        }
+    </script>
+
+</body>
+</html>

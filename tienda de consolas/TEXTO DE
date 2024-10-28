@@ -1,0 +1,64 @@
+}/*
+.container {
+    max-width: 2000px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+    padding: 0px; /* Relleno */
+    background-color: rgb(233, 233, 233); /* Color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.containerxbox {
+    max-width: 1000px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+    padding: 0px; /* Relleno */
+    background-color: rgb(19, 151, 41); /* Color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 5px; /* Bordes redondeados */
+}
+.containerplay {
+    max-width: 1000px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+    padding: 5555px; /* Relleno */
+    background-color: rgb(38, 82, 226); /* Color de fondo */
+    box-shadow: 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 5px; /* Bordes redondeados */
+}
+.containerswicht {
+    max-width: 1000px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+    padding: 0px; /* Relleno */
+    background-color: rgb(46, 1, 1); /* Color de fondo */
+    box-shadow: 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/*CONTENEDORES XBOX PLAY Y SWITCH*/
+.contenedor-principal {
+    display: flex; /* Usamos Flexbox */
+    justify-content: space-around; /* Espacio entre los contenedores */
+}
+.contenedorOxbox {
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(19, 151, 41);
+    width: 150px; /* Ancho fijo para los contenedores */
+}
+.contenedorOplay {
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(38, 82, 226);
+    width: 150px; /* Ancho fijo para los contenedores */
+}
+.contenedorOswicth {
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(252, 13, 52);
+    width: 150px; /* Ancho fijo para los contenedores */
+}
+
+*/
+

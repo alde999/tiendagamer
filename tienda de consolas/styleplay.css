@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(playportada.jpg);
+  
+    background-attachment: fixed; /* Esto hace que la imagen sea estática */
+    background-size: cover; /* Esto hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    
+   
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    width: 150px; /* ancho del submenu */
+}
+
+.submenu a {
+    padding: 10px;
+    color: black;
+}
+
+/*contenedores*/
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los contenedores se muevan a la siguiente línea si no hay suficiente espacio */
+    justify-content: center; /* Centra los contenedores */
+}
+
+.imagen {
+    margin: 55px; /* Espacio entre imágenes */
+}
+
+.imagen img {
+    width: 210px; /* Establece un ancho fijo */
+    height: 155px; /* Mantiene la relación de aspecto */
+    display: block; /* Elimina el espacio debajo de la imagen */
+    border: 3px solid #000000; /* Color y grosor del borde */
+    border-radius: 0px; /* Bordes redondeados */
+    background-color: #124988a1; /* Color de fondo */
+    padding: 10px; /* Espacio interno dentro del contenedor */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra opcional */
+}
+h3 {
+    margin: 5px 0; /* Espacio arriba y abajo del título */
+}
+
+p {
+    margin: 5px 0; /* Espacio arriba y abajo de la descripción */
+}
+h3, p {
+    margin: 5px 0; /* Espacio arriba y abajo del texto */
+    padding: 5px; /* Espacio interno para el texto */
+    border: 1px solid #ccc; /* Borde alrededor del texto */
+    border-radius: 4px; /* Bordes redondeados para el texto */
+    background-color: #e0e0e0; /* Fondo color gris claro para el texto */
+}
+#carrito {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+.button {
+    display: inline-block; /* Para que el enlace actúe como un bloque */
+    text-decoration: none; /* Sin subrayado en el enlace */
+}
+.button-2{
+    background-color:#1120a3; /* Personaliza el color */
+    color: rgb(0, 0, 0);
+    padding: 55px 9px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+a {
+    color: #000000; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}

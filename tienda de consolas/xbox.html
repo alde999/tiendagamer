@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     
+        header {
+            background-image: url(reach.jpg);
+           background-size: cover;
+           top: 0%;
+           left: 0%;
+           height: 0%;
+            
+          
+            
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+        }
+        #miImagendecompra {
+            display: none; /* Ocultar la imagen por defecto */
+        }
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #35424a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xbox shop</title>
+    <link rel="stylesheet" href="stylexbox.css">
+</head>
+<body>
+    <header>
+        <h1>gaming SHOP</h1>
+        <nav>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">apartados</a>
+                        <ul class="submenu">
+                           <li><a href="play.html">apartado de playstation</a></li>
+                            <li><a href="switch.html">apartado switch</a></li>
+                            
+                        </ul></li>
+                    <li>
+                        <a href="#">productos</a>
+                        <ul class="submenu">
+                            <li><a href="#seriesx">xbox series x</a></li>
+                            <li><a href="#seriess">xbox series s</a></li>
+                            <li><a href="#accs">accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#carrot">carrito</a></li>
+                    <li> <a href="tienda.html">Ir al menu principal</a></li>
+                </ul>
+            </nav>
+           
+        </nav>
+    </header>
+
+    <audio id="xboxopen" src="xboxsound.mp3" preload="auto"></audio>
+    <section id="seriesx">
+    <p>CONSOLAS SERIES X</p>
+    <button id="miBotondegif">Mostrar Imagen</button>
+    <img id="miImagendecompra" src="gifinsane.gif" alt="Imagen" />
+   
+    <button id="reproducir">Reproducir Audio</button>
+    <audio id="miAudio" src="ps4-startup.mp3"></audio>
+  <div class="contenedor">
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a2-xboxgalaxy.png" alt="Imagen 1">
+        <h3>Xbox Series X Galaxy</h3>
+        <button onclick="agregarAlCarrito('xbox series x galaxy',13500)">Añadir al carrito</button>
+        <center><p>$
+            13,500</p></center>
+            <p> 2 TB<br> 
+                Unidad de disco<br>
+                Galaxy Black</p>
+        </a>
+    </div>
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a2-xboxseriesx.png" alt="Imagen 2">
+        <h3>playstation 5 slim.</h3>
+        <button onclick="agregarAlCarrito('xbox series x', 10899)">Añadir al carrito</button>
+        <center><p>$
+            10,899</p></center>
+            <p>
+                1 TB<br>
+                Unidad de disco<br>
+                Negro carbón
+            </p>
+        </a>
+    </div>
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a2-xboxseriesxwhite.png" alt="imagen 3">
+        <h3>xbox seies x white</h3>
+        <button onclick="agregarAlCarrito('xbox series x white', 7999)">Añadir al carrito</button>
+        <center><p>$
+            7,999</p></center>
+            <p>1 TB<br>
+                Todo digital<br>
+                Robot White</p>
+        </a>
+    </div>
+    <div class="imagen">
+        <img src="https://th.bing.com/th/id/R.d02b88fb3df02d53a3cf6e186a99a313?rik=gHVfdBcAgCWSAQ&pid=ImgRaw&r=0" alt="Imagen 3">
+       
+    </div>
+</div class="contenedor">
+
+
+</section>
+<section id="seriess">
+<p>CONSOLAS SERIES S</p>
+
+  <div class="contenedor">
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a3-xboxseriess.png"  alt="Imagen 1"> 
+        <h3>Xbox Series S White</h3>
+        <button onclick="agregarAlCarrito('xbox series s white', 10199)">Añadir al carrito</button>
+        <center><p>$
+           5180</p></center>
+            <p>512 GB<br>
+                Todo digital<br>
+                Robot White</p>
+        </a>
+    </div>
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a3-xboxseriessblack.jpg" alt="imagen 2">
+        <h3>Xbox Series S Black</h3>
+        <button onclick="agregarAlCarrito('xbox series s black', 10199)">Añadir al carrito</button>
+        <center><p>$
+            6530</p></center>
+            <p>1 TB<br>
+                Todo digital<br>
+                Black Carbon</p>
+        </a>
+    </div>
+    <div class="imagen"> 
+        <img src="https://th.bing.com/th/id/OIP.sCTB5g3i4ypQJKnfQQDDMwHaEK?rs=1&pid=ImgDetMain" alt="Imagen 1">
+       
+    </div>
+    <div class="imagen">
+        <img src="https://media.giphy.com/media/Z8As3eWjH6Nvq/giphy.gif" alt="Imagen 3">
+        
+    </div>
+</div class="contenedor"></div>
+
+
+
+</section>
+<section id="accs">
+<p>ACCESORIOS XBOX</p>
+
+<div class="contenedor">
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a4-audifonos.jpg" alt="Imagen 1">
+        <h3>Cascos inalámbricos de<br> Xbox</h3>
+        <button onclick="agregarAlCarrito('Cascos inalámbricos de Xbox', 1780)">Añadir al carrito</button>
+        <center><p>$
+            1780</p></center>
+           
+        </a> 
+    </div>
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a4-bateria.jpg" alt="Imagen 2">
+        <h3>Bateria recargable xbox<br> + USB-C®.</h3>
+            <button onclick="agregarAlCarrito('Batería recargable Xbox + USB-C®', 450)">Añadir al carrito</button>
+            <center><p>$
+                450</p></center>
+                
+        </a>
+    </div>
+    <div class="imagen">
+        <a class="button button-2"> 
+        <img src="a4-control.jpg" alt="imagen 3">
+        <h3>control inalambrico xbox</h3>
+            <button onclick="agregarAlCarrito('Control inalámbrico Xbox', 1200)">Añadir al carrito</button>
+            <center><p>$
+                1200</p></center>
+              
+        </a>
+            </a>
+    </div>
+    
+    <div class="imagen">
+        <a class="button button-2">
+            <img src="a4-elite.jpg" alt="imagen 4">
+            <h3>control inalambrico xbox<br> elite series </h3>
+            <button onclick="agregarAlCarrito('Control inalámbrico Xbox Elite Series 2', 2300)">Añadir al carrito</button>
+            <center><p>$2300</p></center>
+            
+        </a>
+    </div>
+</div class="contenedor">
+
+</section>
+
+<section id="carrot">
+<div id="carrito">
+    <h3>Carrito de Compras</h3>
+    <ul id="lista-carrito"></ul>
+    <p id="total-price">Total: $0.00</p>
+</div>
+</section>
+
+<footer>
+    <p1>© 2024 Mi Tienda. Todos los derechos reservados.</p1>
+</footer>
+    
+    <!-- apartado de consolas de edicion especial -->
+
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('xboxopen');
+            audio.play().catch(error => {
+                console.log('No se pudo reproducir el audio:', error);
+            });
+        };
+    </script>
+
+    <script>
+        document.getElementById('reproducir').addEventListener('click', function() {
+            var audio = document.getElementById('miAudio');
+            audio.play();
+        });
+    </script>
+<!--script de gif-->
+
+<script>
+    window.onload = function() {
+        const audio = document.getElementById('switchopen');
+        audio.play().catch(error => {
+            console.log('No se pudo reproducir el audio:', error);
+        });
+    };
+</script>
+
+<script>
+    document.getElementById('reproducir').addEventListener('click', function() {
+        var audio = document.getElementById('miAudio');
+        audio.play();
+    });
+</script>
+<script>
+    const carrito = [];
+    let total = 0;
+
+    function agregarAlCarrito(producto, price) {
+        carrito.push({ nombre: producto, price: price });
+        total += price;
+        displayCart();
+    }
+
+    function displayCart() {
+        const listaCarrito = document.getElementById('lista-carrito');
+        const totalPrice = document.getElementById('total-price');
+    
+        listaCarrito.innerHTML = '';
+        carrito.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.nombre} - $${item.price.toFixed(2)}`;
+            
+            const botonEliminar = document.createElement('button');
+            botonEliminar.textContent = 'Eliminar';
+            botonEliminar.onclick = () => eliminarDelCarrito(item.nombre);
+            li.appendChild(botonEliminar);
+            
+            listaCarrito.appendChild(li);
+        });
+    
+        totalPrice.textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    function eliminarDelCarrito(nombreProducto) {
+        const index = carrito.findIndex(item => item.nombre === nombreProducto);
+        if (index > -1) {
+            total -= carrito[index].price; // Restar el precio del total
+            carrito.splice(index, 1);
+        }
+        displayCart(); // Actualiza la lista del carrito
+    }
+</script>
+
+
+<script>
+    const boton = document.getElementById('miBotondegif');
+    const imagen = document.getElementById('miImagendecompra');
+
+    boton.addEventListener('click', () => {
+        imagen.style.display = 'block'; // Mostrar la imagen
+        setTimeout(() => {
+            imagen.style.display = 'none'; // Ocultar la imagen después de 3 segundos
+        }, 3000);
+    });
+</script>
+</body>
+</html>
